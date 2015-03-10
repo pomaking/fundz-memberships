@@ -1,5 +1,5 @@
 Meteor.methods({
-	"addMember" : function(data){
+	addMember : function(data){
 		console.log(data);
 	}
 })
