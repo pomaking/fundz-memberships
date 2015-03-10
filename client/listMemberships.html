@@ -1,0 +1,8 @@
+<template name="listMemberships">
+<h1>Memberships!</h1>
+{{#each membershipTypes}}
+<h2>{{membershipTypeName}}</h2>
+<a href="{{pathFor 'addMembers'}}"><button class="btn btn-primary">Add Member</button></a>
+{{> quickRemoveButton collection="MembershipTypes" class='btn btn-warning' _id=this._id}}
+{{/each}}
+</template>

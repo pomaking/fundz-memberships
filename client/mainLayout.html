@@ -1,0 +1,15 @@
+<template name="mainLayout">
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<a href="{{pathFor 'addMembershipType'}}">Add Membership Type</a>
+		</div>
+		<div class="col-md-3">
+			<a href="{{pathFor 'listMemberships'}}">List Membership Types</a>
+		</div>
+	</div>
+</div>
+<div class="container">
+{{> yield}}
+</div>
+</template>
