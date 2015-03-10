@@ -4,5 +4,6 @@
 <h2>{{membershipTypeName}}</h2>
 <a href="{{pathFor 'addMembers'}}"><button class="btn btn-primary">Add Member</button></a>
 {{> quickRemoveButton collection="MembershipTypes" class='btn btn-warning' _id=this._id}}
+<a href="{{pathFor 'listMembers'}}"><button class="btn btn-success">View Members</button></a>
 {{/each}}
 </template>
