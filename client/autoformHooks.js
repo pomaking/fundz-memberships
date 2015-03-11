@@ -1,4 +1,4 @@
-AutoForm.hooks({
+/*AutoForm.hooks({
   addMembersForm: {
     before: {
       method: function(doc) {
@@ -8,4 +8,4 @@ AutoForm.hooks({
       }
     }
   }
-});
+});*/

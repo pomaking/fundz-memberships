@@ -1,9 +1,16 @@
 <template name="listMemberships">
-<h1>Memberships!</h1>
-{{#each membershipTypes}}
-<h2>{{membershipTypeName}}</h2>
-<a href="{{pathFor 'addMembers'}}"><button class="btn btn-primary">Add Member</button></a>
-{{> quickRemoveButton collection="MembershipTypes" class='btn btn-warning' _id=this._id}}
-<a href="{{pathFor 'listMembers'}}"><button class="btn btn-success">View Members</button></a>
+{{#with membershipType}}
+<h1>{{membershipTypeName}}</h1>
+{{#each memberships}}
+<div class="row">
+{{#each members}}
+<div class="col-md-3">
+<h4>{{role}}</h4>
+<p>{{firstName}}</p>
+<p>{{lastName}}</p>
+</div>
 {{/each}}
+</div>
+{{/each}}
+{{/with}}
 </template>
