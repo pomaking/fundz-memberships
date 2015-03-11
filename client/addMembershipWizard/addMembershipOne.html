@@ -1,0 +1,9 @@
+<template name="membershipWizOne">
+<h1>Owner</h1>
+<select class="form-control">
+{{#each roles}}
+<option value="{{value}}">{{name}}</option>
+{{/each}}
+</select>
+{{> quickForm schema=ownerSchema id="membership-wiz-one"}}
+</template>

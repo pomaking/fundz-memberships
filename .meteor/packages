@@ -17,3 +17,4 @@ accounts-password
 aldeed:delete-button
 dburles:collection-helpers
 raix:handlebar-helpers
+forwarder:autoform-wizard

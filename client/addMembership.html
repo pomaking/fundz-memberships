@@ -1,6 +1,10 @@
 <template name="addMembership">
 {{#with membershipType}}
 <h1>Add {{membershipTypeName}} Membership</h1>
-{{> quickForm schema=membershipSchema id="addMembersForm" type="method" meteormethod="addMembership"}}
+{{> addMembershipWiz}}
 {{/with}}
+</template>
+
+<template name="extraScruff">
+{{> quickForm schema=membershipSchema id="addMembersForm" type="method" meteormethod="addMembership"}}
 </template>
