@@ -3,7 +3,7 @@
 {{#each membershipTypes}}
 <h2>{{membershipTypeName}}</h2>
 <a href="{{pathFor 'addMembership'}}"><button class="btn btn-primary">Add Membership</button></a>
-{{> quickRemoveButton collection="MembershipTypes" class='btn btn-warning' _id=this._id}}
 <a href="{{pathFor 'listMemberships'}}"><button class="btn btn-success">View Memberships</button></a>
+{{#quickRemoveButton collection="MembershipTypes" class='btn btn-warning' _id=this._id}}Remove Membership Type{{/quickRemoveButton}}
 {{/each}}
 </template>

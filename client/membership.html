@@ -1,0 +1,15 @@
+<template name="membership">
+{{#with membership}}
+<h1>{{owner.firstName}} {{owner.lastName}}'s {{../membershipType}} Membership</h1>
+<p>Date Created: {{dateCreated}}</p>
+<div class="row">
+{{#each members}}
+<div class="col-md-3">
+<h4>{{role}}</h4>
+<p><a href="{{pathFor 'member'}}">{{firstName}} {{lastName}}</a></p>
+<p></p>
+</div>
+{{/each}}
+</div>
+{{/with}}
+</template>

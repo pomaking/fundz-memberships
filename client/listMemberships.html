@@ -2,6 +2,7 @@
 {{#with membershipType}}
 <h1>{{membershipTypeName}}</h1>
 {{#each memberships}}
+<h3><a href="{{pathFor 'membership'}}">{{owner.firstName}} {{owner.lastName}}'s {{../membershipType}} Membership</a></h3>
 <div class="row">
 {{#each members}}
 <div class="col-md-3">

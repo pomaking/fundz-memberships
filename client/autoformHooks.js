@@ -2,8 +2,7 @@
   addMembersForm: {
     before: {
       method: function(doc) {
-        doc.membershipTypeId = this.docId;
-      //  this.result(doc);
+        console.log(doc);
         return doc;
       }
     }
