@@ -16,3 +16,4 @@ accounts-base
 accounts-password
 aldeed:delete-button
 dburles:collection-helpers
+raix:handlebar-helpers

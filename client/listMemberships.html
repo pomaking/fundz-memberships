@@ -6,8 +6,8 @@
 {{#each members}}
 <div class="col-md-3">
 <h4>{{role}}</h4>
-<p>{{firstName}}</p>
-<p>{{lastName}}</p>
+<p><a href="{{pathFor 'member'}}">{{firstName}} {{lastName}}</a></p>
+<p></p>
 </div>
 {{/each}}
 </div>

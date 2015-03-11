@@ -1,0 +1,14 @@
+<template name="member">
+{{#with member}}
+<h1>{{firstName}} {{lastName}}</h1>
+{{#each profileData}}
+{{#if $eq name "householdDetails"}}
+{{#with value}}
+<p>address: {{mailingAddress}}<br>{{city}}, {{state}} {{zip}}</p>
+{{/with}}
+{{else}}
+<p>{{name}}: {{value}}</p>
+{{/if}}
+{{/each}}
+{{/with}}
+</template>
