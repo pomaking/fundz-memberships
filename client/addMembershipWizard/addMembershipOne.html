@@ -1,9 +1,18 @@
 <template name="membershipWizOne">
 <h1>Owner</h1>
-<select class="form-control">
-{{#each roles}}
-<option value="{{value}}">{{name}}</option>
+{{#if ../multipleOwnerRoles}}
+<label>My role in the membership</label>
+<select class="form-control" name="role" data-action="select-role">
+{{#each ../roles}}
+		<option value="none">Select Role</option>
+	{{#if canBeOwner}}
+		<option value="{{role}}">{{role}}</option>
+	{{/if}}
 {{/each}}
 </select>
-{{> quickForm schema=ownerSchema id="membership-wiz-one"}}
+{{> quickForm schema=selectedRoleSchema id="membership-wiz-one"}}
+{{else}}
+<h2>{{../ownerRole.role}}</h2>
+{{> quickForm schema=ownerRoleSchema id="membership-wiz-one"}}
+{{/if}}
 </template>

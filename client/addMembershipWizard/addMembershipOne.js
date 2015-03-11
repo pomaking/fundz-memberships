@@ -1,8 +1,8 @@
 Template.membershipWizOne.helpers({
-	ownerSchema: function(){
-		return new SimpleSchema({name: {
-			type: String,
-			label: "name"
-		}});
+	ownerRoleSchema: function(){
+		return Router.current().data().membershipType().ownerSchema();
+	},
+	selectedRoleSchema: function(){
+		return Router.current().data().membershipType().ownerSchema();
 	}
-})
+});
